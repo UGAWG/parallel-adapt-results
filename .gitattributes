@@ -1,0 +1,2 @@
+*.meshb filter=lfs diff=lfs merge=lfs -text
+*.solb filter=lfs diff=lfs merge=lfs -text
