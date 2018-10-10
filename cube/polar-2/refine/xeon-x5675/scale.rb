@@ -6,8 +6,7 @@ def sh(comm)
 end
 
 cpn=12
-cores = [1,2,4,8,16,32,64,128]
-cores = [1*cpn,2*cpn,4*cpn,8*cpn]
+cores = [1,2,4,8,16,32,64,128,1*cpn,2*cpn,4*cpn,8*cpn]
 
 cores.each do |core|
   dir = sprintf("core%04d",core)
