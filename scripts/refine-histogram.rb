@@ -10,5 +10,5 @@ dirmeshbs.each do |dirmeshb|
   dir = dirmeshb.split(/\//)[0]
   meshb = dirmeshb.split(/\//)[1]
   solb = meshb.sub(/\.meshb/,'-final-metric.solb')
-  sh "(cd #{dir} && ref_historgram #{meshb} #{solb} )"
+  sh "(cd #{dir} && ref_histogram_test #{meshb} #{solb} )"
 end
