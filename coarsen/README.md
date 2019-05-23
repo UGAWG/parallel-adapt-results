@@ -5,7 +5,7 @@ It corresponds to the numerical solution (at one time step) of a spherical blast
 
 # adap.met.7.meshb adap.met.7.solb
 * Vertices: 821373 item
-* Triangles: 821373 item
+* Triangles: 122880 item
 * Tetrahedra: 4767431 item
 
 Metric complexity of 49013
