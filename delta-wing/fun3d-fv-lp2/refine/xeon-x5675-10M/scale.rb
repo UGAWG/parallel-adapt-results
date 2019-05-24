@@ -12,5 +12,5 @@ cores.each do |core|
   dir = sprintf("core%04d",core)
   sh "rm -rf #{dir}"
   sh "mkdir -p #{dir}"
-  sh "(cd #{dir} && pbswrap -e '. ~/.profile' -t 24 -q K2-route -cpn #{cpn} -np #{core} '~/refine/zoltan/src/ref_driver -i ../../../delta50k.meshb -m ../../../scaled-metric/delta10M-metric.solb -o out < /dev/null | tee refine_out')"
+  sh "(cd #{dir} && pbswrap -e '. ~/.profile' -t 24 -q K2-route -cpn #{cpn} -np #{core} '~/refine/parmetis/src/ref_driver -i ../../../delta50k.meshb -m ../../../scaled-metric/delta10M-metric.solb -c -o out < /dev/null | tee refine_out')"
 end
